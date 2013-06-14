@@ -1,5 +1,5 @@
 {
-  "name": "gm-angular-tempaltes",
+  "name": "gm-angular-templates",
   "version": "0.0.1",
   "description": "Gleeman module for collecting angular js templates to include in index html file",
   "main": "index.js",
