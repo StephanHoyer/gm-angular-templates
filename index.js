@@ -41,6 +41,7 @@ var getRenderedTemplates = function(templatesDone) {
 };
 
 module.exports = {
+  _namespace: 'angular:templates',
   func: function(done) { done(null, addFunc); },
   asyncFunc: function(done) { done(null, addAsyncFunc); },
   jade: function(done) { done(null, addJadeFile); },

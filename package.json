@@ -1,0 +1,30 @@
+{
+  "name": "gm-angular-tempaltes",
+  "version": "0.0.1",
+  "description": "Gleeman module for collecting angular js templates to include in index html file",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.fastfish.eu/angular-templates"
+  },
+  "keywords": [
+    "angular",
+    "template",
+    "jade"
+  ],
+  "author": "Stephan Hoyer <shoyer@fastfish.eu>",
+  "license": "MIT",
+  "gitHead": "3c636acb8667f1ce770a653c8ff64906dcff8092",
+  "devDependencies": {
+    "mocha": "~1.11.0",
+    "expect.js": "~0.2.0"
+  },
+  "dependencies": {
+    "lodash": "~1.3.1",
+    "async": "~0.2.9",
+    "jade": "~0.31.2"
+  }
+}
