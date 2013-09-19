@@ -45,5 +45,19 @@ module.exports = {
   func: function(done) { done(null, addFunc); },
   asyncFunc: function(done) { done(null, addAsyncFunc); },
   jade: function(done) { done(null, addJadeFile); },
-  all: function(done) { done(null, getRenderedTemplates); }
+  all: function(done) { done(null, getRenderedTemplates); },
+  ready: [
+    'gleeman:renderArgs:add',
+    'angular:templates:all',
+    function(done, addArg, getTemplates) {
+      getTemplates(function(err, templates) {
+        if (err) {
+          console.error(err);
+        }
+        addArg('templates', templates);
+        done();
+      });
+    },
+    'gleeman:renderArgs:get'
+  ]
 };
